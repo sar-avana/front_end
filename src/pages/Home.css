@@ -174,4 +174,43 @@
   padding: 2px 6px;
 }
 
+/* Controls for adding and reducing quantity */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
 
+/* Add and reduce buttons */
+.cart-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+  background-color: #45a049;
+}
+
+.cart-button.reduce {
+  background-color: #f44336;
+}
+
+.cart-button.reduce:hover {
+  background-color: #d32f2f;
+}
+
+/* Quantity display between buttons */
+.cart-quantity {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 5px;
+}

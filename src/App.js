@@ -8,6 +8,8 @@ import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
 import OrderDetails from './pages/OrderDetails';  // Order details page
 import PaymentPage from './pages/PaymentPage';  // Adjust the import based on your structure
+import AddProduct from "./pages/AddProduct"; // Import the component
+import UpdateProduct from "./pages/UpdateProduct"; // Import the component
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/order/:orderId" element={<OrderDetails />} />  {/* Order details route */}
         <Route path="/payment/:id" element={<PaymentPage />} />  {/* Define this route */}
-        
+        <Route path="/add-product" element={<AddProduct />} /> {/* New Route */}
+        <Route path="/update-product/:id" element={<UpdateProduct />} />
       </Routes>
     </Router>
   );
